@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // GitHub Pages can't handle Next.js image optimization
   },
-  // basePath: "/portfolio", // Replace with your repo name
-  // assetPrefix: "/portfolio/",
+  basePath: "/portfolio", // Required for GitHub Pages
+  assetPrefix: "/portfolio/", // Required for GitHub Pages
 };
 
 export default nextConfig;
