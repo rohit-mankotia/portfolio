@@ -2,12 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  output: "export", // Needed for `next export`
-  images: {
-    unoptimized: true, // GitHub Pages can't handle Next.js image optimization
-  },
-  basePath: "/portfolio", // Required for GitHub Pages
-  assetPrefix: "/portfolio/", // Required for GitHub Pages
+  output: "export",
+  basePath: "/portfolio",
 };
 
 export default nextConfig;
