@@ -163,7 +163,7 @@ export default function Portfolio(): React.JSX.Element {
                 <button onClick={() => scrollToSection('experience')} className="text-gray-600 hover:text-blue-600 transition-colors">Experience</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-blue-600 transition-colors">Contact</button>
               </div>
-              <button 
+              <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="md:hidden text-gray-600"
               >
@@ -231,13 +231,13 @@ export default function Portfolio(): React.JSX.Element {
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">Full Stack Developer from Chandigarh</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  I&apos;m a passionate full-stack developer with over 4 years of experience in building robust web applications. 
-                  I specialize in modern JavaScript technologies and have worked with leading companies like Byju&apos;s, 
+                  I&apos;m a passionate full-stack developer with over 4 years of experience in building robust web applications.
+                  I specialize in modern JavaScript technologies and have worked with leading companies like Byju&apos;s,
                   creating scalable solutions that serve millions of users.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  My expertise spans across frontend frameworks like React and Next.js, backend technologies including 
-                  Node.js and Express.js, and databases like MongoDB and MySQL. I&apos;m passionate about creating 
+                  My expertise spans across frontend frameworks like React and Next.js, backend technologies including
+                  Node.js and Express.js, and databases like MongoDB and MySQL. I&apos;m passionate about creating
                   user-friendly interfaces and efficient backend systems.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -362,11 +362,10 @@ export default function Portfolio(): React.JSX.Element {
                         <p className="text-gray-600">{exp.location}</p>
                       </div>
                       <div className="mt-2 md:mt-0">
-                        <span className={`px-4 py-2 rounded-full text-sm font-semibold ${
-                          index === 0 ? 'bg-green-100 text-green-800' : 
-                          index === 1 ? 'bg-blue-100 text-blue-800' : 
-                          'bg-purple-100 text-purple-800'
-                        }`}>
+                        <span className={`px-4 py-2 rounded-full text-sm font-semibold ${index === 0 ? 'bg-green-100 text-green-800' :
+                            index === 1 ? 'bg-blue-100 text-blue-800' :
+                              'bg-purple-100 text-purple-800'
+                          }`}>
                           {exp.period}
                         </span>
                       </div>
@@ -374,11 +373,10 @@ export default function Portfolio(): React.JSX.Element {
                     <div className={`${exp.bullets.length > 4 ? 'grid md:grid-cols-2 gap-4' : 'space-y-3'}`}>
                       {exp.bullets.map((bullet, bulletIndex) => (
                         <div key={bulletIndex} className="flex items-start">
-                          <i className={`fas fa-check-circle mt-1 mr-3 ${
-                            index === 0 ? 'text-green-600' : 
-                            index === 1 ? 'text-blue-600' : 
-                            'text-purple-600'
-                          }`}></i>
+                          <i className={`fas fa-check-circle mt-1 mr-3 ${index === 0 ? 'text-green-600' :
+                              index === 1 ? 'text-blue-600' :
+                                'text-purple-600'
+                            }`}></i>
                           <p className="text-gray-700">{bullet}</p>
                         </div>
                       ))}
@@ -432,7 +430,8 @@ export default function Portfolio(): React.JSX.Element {
         <footer className="bg-gray-800 text-white py-8">
           <div className="max-w-6xl mx-auto px-4 text-center">
             <p className="text-gray-400">
-              © 2024 Rohit Mankotia. Built with passion and modern web technologies.
+              {/* © 2024 Rohit Mankotia. Built with passion and modern web technologies. */}
+              Built with passion and modern web technologies.
             </p>
           </div>
         </footer>
