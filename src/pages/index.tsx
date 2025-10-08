@@ -48,7 +48,7 @@ export default function Portfolio(): React.JSX.Element {
       company: "Universa Analytics India Pvt. Ltd.",
       role: "Full Stack Developer",
       location: "Chandigarh, India",
-      period: "Sep 2023 - Present",
+      period: "Sep 2023 - July 2025",
       bullets: [
         "Independently developed over three full-stack web applications using Next.js (frontend), Node.js (backend), and MySQL (database).",
         "Designed and implemented dynamic RESTful APIs to support data-driven features and frontend interactions based on application-specific requirements.",
