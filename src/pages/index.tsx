@@ -38,12 +38,24 @@ export default function Portfolio(): React.JSX.Element {
 
   const skills: Skills = {
     frontend: ["React", "Next.js", "Redux", "Chart.js"],
-    backend: ["Node.js", "Express.js", "JWT", "RESTful APIs"],
+    backend: ["Node.js", "NestJS", "Express.js", "JWT", "RESTful APIs"],
     db: ["MongoDB", "MySQL", "Redis"],
     tools: ["Git/GitHub", "VS Code", "Postman", "Jira"],
   };
 
   const experience: Experience[] = [
+    {
+      company: "hy: Tech and Consulting",
+      role: "Senior Software Engineer",
+      location: "India",
+      period: "Oct 2025 - Present",
+      bullets: [
+        "Working on large-scale Government of India digital platforms under Protean eGov Technologies.",
+        "Developed and enhanced the CKYCRC Admin Dashboard using React.js and TypeScript with modular, reusable UI components.",
+        "Integrated secure REST APIs and implemented UI features based on Figma design specifications.",
+        "Designing and building page-based REST APIs using NestJS and developing frontend modules using Next.js for the Bima Sugam headless CMS powered by Drupal."
+      ],
+    },
     {
       company: "Universa Analytics India Pvt. Ltd.",
       role: "Full Stack Developer",
@@ -110,8 +122,8 @@ export default function Portfolio(): React.JSX.Element {
   return (
     <>
       <Head>
-        <title>Rohit Mankotia - Full Stack Developer</title>
-        <meta name="description" content="Full Stack Developer with 4+ years of experience in React, Node.js, and modern web technologies." />
+        <title>Rohit Mankotia - Software Engineer</title>
+        <meta name="description" content="Software Engineer with 4+ years of experience in React, Node.js, and modern web technologies." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -193,7 +205,7 @@ export default function Portfolio(): React.JSX.Element {
                 <i className="fas fa-code text-4xl"></i>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-4">Rohit Mankotia</h1>
-              <p className="text-xl md:text-2xl mb-6 text-white/90">Full Stack Developer</p>
+              <p className="text-xl md:text-2xl mb-6 text-white/90">Software Engineer</p>
               <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
                 Passionate developer with 4+ years of experience building scalable web applications using modern technologies like React, Node.js, and cloud platforms.
               </p>
@@ -229,7 +241,7 @@ export default function Portfolio(): React.JSX.Element {
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-6">Full Stack Developer from Chandigarh</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-6">Software Engineer from Chandigarh</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   I&apos;m a passionate full-stack developer with over 4 years of experience in building robust web applications.
                   I specialize in modern JavaScript technologies and have worked with leading companies like Byju&apos;s,
@@ -363,8 +375,8 @@ export default function Portfolio(): React.JSX.Element {
                       </div>
                       <div className="mt-2 md:mt-0">
                         <span className={`px-4 py-2 rounded-full text-sm font-semibold ${index === 0 ? 'bg-green-100 text-green-800' :
-                            index === 1 ? 'bg-blue-100 text-blue-800' :
-                              'bg-purple-100 text-purple-800'
+                          index === 1 ? 'bg-blue-100 text-blue-800' :
+                            'bg-purple-100 text-purple-800'
                           }`}>
                           {exp.period}
                         </span>
@@ -374,8 +386,8 @@ export default function Portfolio(): React.JSX.Element {
                       {exp.bullets.map((bullet, bulletIndex) => (
                         <div key={bulletIndex} className="flex items-start">
                           <i className={`fas fa-check-circle mt-1 mr-3 ${index === 0 ? 'text-green-600' :
-                              index === 1 ? 'text-blue-600' :
-                                'text-purple-600'
+                            index === 1 ? 'text-blue-600' :
+                              'text-purple-600'
                             }`}></i>
                           <p className="text-gray-700">{bullet}</p>
                         </div>
