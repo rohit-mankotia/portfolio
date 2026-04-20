@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
-type Contact = {
-  name: string;
-  location: string;
-  email: string;
-  phone: string;
-  linkedin: string;
-};
-
 type Skills = {
   frontend: string[];
   backend: string[];
