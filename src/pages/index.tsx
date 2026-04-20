@@ -28,14 +28,6 @@ export default function Portfolio(): React.JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [navBg, setNavBg] = useState(false);
 
-  const contact: Contact = {
-    name: "Rohit Mankotia",
-    location: "Chandigarh, India",
-    email: "",
-    phone: "",
-    linkedin: "https://www.linkedin.com/in/rohit-mankotia",
-  };
-
   const skills: Skills = {
     frontend: ["React", "Next.js", "Redux", "Chart.js"],
     backend: ["Node.js", "NestJS", "Express.js", "JWT", "RESTful APIs"],
