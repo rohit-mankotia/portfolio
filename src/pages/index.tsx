@@ -191,7 +191,7 @@ export default function Portfolio(): React.JSX.Element {
               <h1 className="text-5xl md:text-6xl font-bold mb-4">Rohit Mankotia</h1>
               <p className="text-xl md:text-2xl mb-6 text-white/90">Software Engineer</p>
               <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
-                Passionate developer with 4+ years of experience building scalable web applications using modern technologies like React, Node.js, and cloud platforms.
+                Passionate developer with 4.5+ years of experience building scalable web applications using modern technologies like React, Node.js, and cloud platforms.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
